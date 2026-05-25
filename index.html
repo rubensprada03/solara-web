@@ -5,7 +5,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Solara Cerveja Artesanal — Projeto IoT & Automação</title>
-<link rel="icon" type="image/png" href="./assets/favicon.jpeg">
+<link rel="icon" type="image/png" href="./assets/fa">
 <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&family=Cinzel:wght@400;600;700&family=Crimson+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet">
 <style>
   :root {
@@ -1380,10 +1380,10 @@
     <li><a href="#resumo">Resumo</a></li>
     <li><a href="#referencial">Teoria</a></li>
     <li><a href="#metodologia">Metodologia</a></li>
-    <li><a href="#processo">Processo</a></li>
+        <li><a href="#alertas">Alertas</a></li>
+        <li><a href="#processo">Processo</a></li>
     <li><a href="#resultados">Resultados</a></li>
     <li><a href="#equipe">Equipe</a></li>
-    <li><a href="#alertas">Alertas</a></li>
     <li><a href="#conclusao">Conclusão</a></li>
   </ul>
   <label class="theme-toggle" title="Alternar tema">
@@ -1634,303 +1634,7 @@
   </div>
 </section>
 
-<div class="hop-divider">
-  <div class="hop-line"></div>
-  <div class="hop-center">
-    <div class="hop-dot"></div>
-    <span class="hop-icon">🍺</span>
-    <div class="hop-dot"></div>
-  </div>
-  <div class="hop-line"></div>
-</div>
 
-<!-- PROCESSO PRODUTIVO -->
-<section id="processo" style="position:relative;max-width:100%;background:rgba(10,6,0,0.5);padding:100px 0;">
-  <div class="processo-bg"></div>
-  <div style="max-width:1200px;margin:0 auto;padding:0 48px;position:relative;">
-    <div class="section-label">04 — Processo Produtivo</div>
-    <h2 class="section-title">O Experimento</h2>
-    <p class="section-body">
-      Validação prática durante a produção real de uma <strong style="color:var(--gold)">Session Pilsen de 5 litros</strong>,
-      seguindo protocolo "Faz Tua Ceva" em quatro etapas cronometradas e monitoradas.
-    </p>
-
-    <div class="timeline">
-      <div class="timeline-item reveal">
-        <div class="timeline-dot"></div>
-        <div class="timeline-label">Etapa I</div>
-        <h3>Preparação e Mostura (Mash)</h3>
-        <p>
-          3 litros de água aquecidos a 70°C, seguido da adição de 675g de Malte Pilsen e 75g de Malte Chateau Munich.
-          O setpoint foi reajustado para 65°C após a queda de temperatura causada pelos grãos frios.
-          O sistema manteve agitação manual por 60 minutos com controle automático do fogão.
-        </p>
-        <div class="timeline-badges">
-          <span class="tbadge tbadge-gold">60 min</span>
-          <span class="tbadge tbadge-gold">65°C setpoint</span>
-          <span class="tbadge tbadge-gold">675g Malte Pilsen</span>
-          <span class="tbadge tbadge-gold">75g Chateau Munich</span>
-        </div>
-      </div>
-
-      <div class="timeline-item red reveal">
-        <div class="timeline-dot"></div>
-        <div class="timeline-label">Etapa II</div>
-        <h3>Clarificação e Mash Out</h3>
-        <p>
-          Temperatura elevada para 76°C por 15 minutos para encerrar a ação enzimática. Em seguida,
-          lavagem com 4 litros de água a 76°C para extração dos açúcares residuais do bagaço,
-          resultando em ~8 litros de mosto filtrado pronto para fervura.
-        </p>
-        <div class="timeline-badges">
-          <span class="tbadge tbadge-red">15 min</span>
-          <span class="tbadge tbadge-red">76°C</span>
-          <span class="tbadge tbadge-red">4L água de lavagem</span>
-          <span class="tbadge tbadge-red">~8L mosto final</span>
-        </div>
-      </div>
-
-      <div class="timeline-item teal reveal">
-        <div class="timeline-dot"></div>
-        <div class="timeline-label">Etapa III</div>
-        <h3>Fervura (Boil) e Lupulagem</h3>
-        <p>
-          60 minutos de fervura com adições cronometradas de lúpulo: 2,5g de Nugget no início para
-          amargor base e 2,5g de Brewer's Gold nos últimos 10 minutos para sabor e aroma.
-          Resfriamento imediato a menos de 35°C com resfriador de imersão.
-        </p>
-        <div class="timeline-badges">
-          <span class="tbadge tbadge-teal">60 min fervura</span>
-          <span class="tbadge tbadge-teal">2,5g Nugget</span>
-          <span class="tbadge tbadge-teal">2,5g Brewer's Gold</span>
-          <span class="tbadge tbadge-teal">&lt;35°C pós-fervura</span>
-        </div>
-      </div>
-
-      <div class="timeline-item green reveal">
-        <div class="timeline-dot"></div>
-        <div class="timeline-label">Etapa IV</div>
-        <h3>Fermentação, Maturação e Envase</h3>
-        <p>
-          Fermento Ale adicionado ao mosto frio. O ESP32 controlou automaticamente as temperaturas:
-          18°C por 10 dias (fermentação ativa), 20°C por 4 dias (descanso de diacetil),
-          10°C por 7+ dias (maturação). Envase com 6,5g de açúcar por litro para carbonatação natural.
-        </p>
-        <div class="timeline-badges">
-          <span class="tbadge tbadge-green">18°C — 10 dias</span>
-          <span class="tbadge tbadge-green">20°C — 4 dias</span>
-          <span class="tbadge tbadge-green">10°C — 7+ dias</span>
-          <span class="tbadge tbadge-green">6,5g açúcar/L</span>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<div class="hop-divider">
-  <div class="hop-line"></div>
-  <div class="hop-center">
-    <div class="hop-dot"></div>
-    <span class="hop-icon">📊</span>
-    <div class="hop-dot"></div>
-  </div>
-  <div class="hop-line"></div>
-</div>
-
-<!-- RESULTADOS -->
-<section id="resultados">
-  <div class="section-label">05 — Resultados e Discussão</div>
-  <h2 class="section-title">O que os dados mostram</h2>
-  <p class="section-body">
-    Os dados gerados pelo controlador validam a eficiência do sistema on-off com histerese para
-    controle de processos artesanais com exigência térmica crítica.
-  </p>
-
-  <!-- <div class="results-grid" style="margin-top:48px;">
-    <div class="stat-card gold-card reveal">
-      <div class="stat-number">65,18°C</div>
-      <div class="stat-label">Temperatura Média — Mostura</div>
-      <div class="stat-sub">Meta: 65,0°C · Desvio: +0,18°C</div>
-    </div>
-    <div class="stat-card teal-card reveal">
-      <div class="stat-number">98,4%</div>
-      <div class="stat-label">Taxa de Entrega de Dados</div>
-      <div class="stat-sub">Reconexão automática nos 1,6%</div>
-    </div>
-    <div class="stat-card red-card reveal">
-      <div class="stat-number">28%</div>
-      <div class="stat-label">Tempo Ligado na Estabilização</div>
-      <div class="stat-sub">Piscadas de ~8s a cada 30s</div>
-    </div>
-    <div class="stat-card green-card reveal">
-      <div class="stat-number">22 min</div>
-      <div class="stat-label">Aquecimento Inicial Contínuo</div>
-      <div class="stat-sub">Fogão a 100% até atingir 70°C</div>
-    </div>
-
-    <!-- TABLE -->
-    <div class="results-table-wrap reveal">
-      <h3>📋 Estabilidade Térmica por Etapa do Processo</h3>
-      <table>
-        <thead>
-          <tr>
-            <th>Etapa</th>
-            <th>Tempo Previsto</th>
-            <th>Temperatura Teórica</th>
-            <th>Temperatura Média Real</th>
-            <th>Status</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td class="label">Mostura</td>
-            <td>60 min</td>
-            <td class="value">65,0°C</td>
-            <td class="value">65,18°C</td>
-            <td class="ok">✓ Estável</td>
-          </tr>
-          <tr>
-            <td class="label">Mash Out</td>
-            <td>15 min</td>
-            <td class="value">76,0°C</td>
-            <td class="value">76,12°C</td>
-            <td class="ok">✓ Estável</td>
-          </tr>
-          <tr>
-            <td class="label">Fervura Ativa</td>
-            <td>60 min</td>
-            <td class="value">100,0°C</td>
-            <td class="value">99,65°C</td>
-            <td class="ok">✓ Estável</td>
-          </tr>
-          <tr>
-            <td class="label">Fermentação</td>
-            <td>10 dias</td>
-            <td class="value">18,0°C</td>
-            <td class="value">18,04°C</td>
-            <td class="ok">✓ Estável</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-
-    <div class="temp-chart reveal" style="grid-column:1/-1;">
-      <h3>📈 Curva Térmica Comparativa — Temperatura Teórica vs Real</h3>
-      <p></p>
-      <div class="chart-bars" id="chartBars"></div>
-      <div style="display:flex;gap:24px;margin-top:16px;font-size:0.75rem;font-family:'Cinzel',serif;letter-spacing:1px;opacity:0.6;">
-        <span><span style="display:inline-block;width:12px;height:12px;background:var(--gold);border-radius:2px;margin-right:6px;vertical-align:middle;"></span>Temperatura Teórica</span>
-        <span><span style="display:inline-block;width:12px;height:12px;background:var(--teal);border-radius:2px;margin-right:6px;vertical-align:middle;"></span>Temperatura Real</span>
-      </div>
-    </div>
-  </div>
-</section>
-
-<div class="hop-divider">
-  <div class="hop-line"></div>
-  <div class="hop-center">
-    <div class="hop-dot"></div>
-    <span class="hop-icon">🔌</span>
-    <div class="hop-dot"></div>
-  </div>
-  <div class="hop-line"></div>
-</div>
-
-<!-- ARQUITETURA -->
-<section id="arquitetura">
-  <div class="section-label">06 — Arquitetura do Sistema</div>
-  <h2 class="section-title">Visão Geral</h2>
-  <p class="section-body">
-    Quatro camadas integradas compõem a solução, desde a leitura física do sensor até
-    o dashboard analítico acessível em qualquer dispositivo.
-  </p>
-
-  <div class="arch-grid reveal">
-    <div class="arch-block arch-connector">
-      <span class="arch-icon">🌡</span>
-      <h4>Sensoreamento</h4>
-      <p>DS18B20 mede temperatura com precisão de ±0,5°C no protocolo 1-Wire</p>
-    </div>
-    <div class="arch-block arch-connector">
-      <span class="arch-icon">⚡</span>
-      <h4>Processamento</h4>
-      <p>ESP32 aplica histerese, aciona relé e hospeda servidor web local</p>
-    </div>
-    <div class="arch-block arch-connector">
-      <span class="arch-icon">☁</span>
-      <h4>Nuvem</h4>
-      <p>Google Apps Script recebe dados via HTTP e popula o Google Sheets</p>
-    </div>
-    <div class="arch-block arch-connector">
-      <span class="arch-icon">📊</span>
-      <h4>Visualização</h4>
-      <p>Excel transforma planilha em dashboard interativo em tempo real</p>
-    </div>
-  </div>
-</section>
-
-<div class="hop-divider">
-  <div class="hop-line"></div>
-  <div class="hop-center">
-    <div class="hop-dot"></div>
-    <span class="hop-icon">👥</span>
-    <div class="hop-dot"></div>
-  </div>
-  <div class="hop-line"></div>
-</div>
-
-<!-- EQUIPE -->
-<section id="equipe">
-  <div class="section-label">07 — A Equipe</div>
-  <h2 class="section-title">Quem fez acontecer</h2>
-  <p class="section-body" style="margin:0 auto;">
-    Projeto desenvolvido por oito estudantes do SENAC, reunindo eletrônica,
-    programação, redes e tecnologia alimentar.
-  </p>
-
-  <div class="team-grid">
-    <div class="member-card reveal">
-      <div class="member-avatar">H</div>
-      <div class="member-name">Henrique Moreira Santos</div>
-      <div class="member-email">henriquemoreira1074@gmail.com</div>
-    </div>
-    <div class="member-card reveal">
-      <div class="member-avatar">R</div>
-      <div class="member-name">Rafael Damazio Delfino</div>
-      <div class="member-email">rafaeldamdel@gmail.com</div>
-    </div>
-    <div class="member-card reveal">
-      <div class="member-avatar">R</div>
-      <div class="member-name">Raul Mello de Oliveira</div>
-      <div class="member-email">raulmellodeoliveira@gmail.com</div>
-    </div>
-    <div class="member-card reveal">
-      <div class="member-avatar">G</div>
-      <div class="member-name">Gabriel M. da Gama Muruci</div>
-      <div class="member-email">gmmurucci@icloud.com</div>
-    </div>
-    <div class="member-card reveal">
-      <div class="member-avatar">L</div>
-      <div class="member-name">Leonardo H. Fabris Araujo</div>
-      <div class="member-email">leohfabrisa@gmail.com</div>
-    </div>
-    <div class="member-card reveal">
-      <div class="member-avatar">J</div>
-      <div class="member-name">João Victor F. Sobreira</div>
-      <div class="member-email">jvfs2306@gmail.com</div>
-    </div>
-    <div class="member-card reveal">
-      <div class="member-avatar">R</div>
-      <div class="member-name">Rubens Arini Prada</div>
-      <div class="member-email">rubensprada2003@gmail.com</div>
-    </div>
-    <div class="member-card reveal">
-      <div class="member-avatar">G</div>
-      <div class="member-name">Guilherme Pereira Gomes</div>
-      <div class="member-email">guipgomes2006@gmail.com</div>
-    </div>
-  </div>
-</section>
 
 <div class="hop-divider">
   <div class="hop-line"></div>
@@ -1942,9 +1646,8 @@
   <div class="hop-line"></div>
 </div>
 
-<!-- ALERTAS POR E-MAIL -->
 <section id="alertas">
-  <div class="section-label">08 — Sistema de Alertas</div>
+  <div class="section-label">04 — Sistema de Alertas</div>
   <h2 class="section-title">Notificações por E-mail</h2>
   <p class="section-body">
     Além do monitoramento visual no Excel, implementamos um sistema de alertas automáticos
@@ -2051,6 +1754,309 @@
     </div>
   </div>
 </section>
+
+
+<div class="hop-divider">
+  <div class="hop-line"></div>
+  <div class="hop-center">
+    <div class="hop-dot"></div>
+    <span class="hop-icon">🍺</span>
+    <div class="hop-dot"></div>
+  </div>
+  <div class="hop-line"></div>
+</div>
+<!-- PROCESSO PRODUTIVO -->
+<section id="processo" style="position:relative;max-width:100%;background:rgba(10,6,0,0.5);padding:100px 0;">
+  <div class="processo-bg"></div>
+  <div style="max-width:1200px;margin:0 auto;padding:0 48px;position:relative;">
+    <div class="section-label">05 — Processo Produtivo</div>
+    <h2 class="section-title">O Experimento</h2>
+    <p class="section-body">
+      Validação prática durante a produção real de uma <strong style="color:var(--gold)">Session Pilsen de 5 litros</strong>,
+      seguindo protocolo "Faz Tua Ceva" em quatro etapas cronometradas e monitoradas.
+    </p>
+
+    <div class="timeline">
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-label">Etapa I</div>
+        <h3>Preparação e Mostura (Mash)</h3>
+        <p>
+          3 litros de água aquecidos a 70°C, seguido da adição de 675g de Malte Pilsen e 75g de Malte Chateau Munich.
+          O setpoint foi reajustado para 65°C após a queda de temperatura causada pelos grãos frios.
+          O sistema manteve agitação manual por 60 minutos com controle automático do fogão.
+        </p>
+        <div class="timeline-badges">
+          <span class="tbadge tbadge-gold">60 min</span>
+          <span class="tbadge tbadge-gold">65°C setpoint</span>
+          <span class="tbadge tbadge-gold">675g Malte Pilsen</span>
+          <span class="tbadge tbadge-gold">75g Chateau Munich</span>
+        </div>
+      </div>
+
+      <div class="timeline-item red reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-label">Etapa II</div>
+        <h3>Clarificação e Mash Out</h3>
+        <p>
+          Temperatura elevada para 76°C por 15 minutos para encerrar a ação enzimática. Em seguida,
+          lavagem com 4 litros de água a 76°C para extração dos açúcares residuais do bagaço,
+          resultando em ~8 litros de mosto filtrado pronto para fervura.
+        </p>
+        <div class="timeline-badges">
+          <span class="tbadge tbadge-red">15 min</span>
+          <span class="tbadge tbadge-red">76°C</span>
+          <span class="tbadge tbadge-red">4L água de lavagem</span>
+          <span class="tbadge tbadge-red">~8L mosto final</span>
+        </div>
+      </div>
+
+      <div class="timeline-item teal reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-label">Etapa III</div>
+        <h3>Fervura (Boil) e Lupulagem</h3>
+        <p>
+          60 minutos de fervura com adições cronometradas de lúpulo: 2,5g de Nugget no início para
+          amargor base e 2,5g de Brewer's Gold nos últimos 10 minutos para sabor e aroma.
+          Resfriamento imediato a menos de 35°C com resfriador de imersão.
+        </p>
+        <div class="timeline-badges">
+          <span class="tbadge tbadge-teal">60 min fervura</span>
+          <span class="tbadge tbadge-teal">2,5g Nugget</span>
+          <span class="tbadge tbadge-teal">2,5g Brewer's Gold</span>
+          <span class="tbadge tbadge-teal">&lt;35°C pós-fervura</span>
+        </div>
+      </div>
+
+      <div class="timeline-item green reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-label">Etapa IV</div>
+        <h3>Fermentação, Maturação e Envase</h3>
+        <p>
+          Fermento Ale adicionado ao mosto frio. O ESP32 controlou automaticamente as temperaturas:
+          18°C por 10 dias (fermentação ativa), 20°C por 4 dias (descanso de diacetil),
+          10°C por 7+ dias (maturação). Envase com 6,5g de açúcar por litro para carbonatação natural.
+        </p>
+        <div class="timeline-badges">
+          <span class="tbadge tbadge-green">18°C — 10 dias</span>
+          <span class="tbadge tbadge-green">20°C — 4 dias</span>
+          <span class="tbadge tbadge-green">10°C — 7+ dias</span>
+          <span class="tbadge tbadge-green">6,5g açúcar/L</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="hop-divider">
+  <div class="hop-line"></div>
+  <div class="hop-center">
+    <div class="hop-dot"></div>
+    <span class="hop-icon">📊</span>
+    <div class="hop-dot"></div>
+  </div>
+  <div class="hop-line"></div>
+</div>
+
+<!-- RESULTADOS -->
+<section id="resultados">
+  <div class="section-label">06 — Resultados e Discussão</div>
+  <h2 class="section-title">O que os dados mostram</h2>
+  <p class="section-body">
+    Os dados gerados pelo controlador validam a eficiência do sistema on-off com histerese para
+    controle de processos artesanais com exigência térmica crítica.
+  </p>
+
+  <!-- <div class="results-grid" style="margin-top:48px;">
+    <div class="stat-card gold-card reveal">
+      <div class="stat-number">65,18°C</div>
+      <div class="stat-label">Temperatura Média — Mostura</div>
+      <div class="stat-sub">Meta: 65,0°C · Desvio: +0,18°C</div>
+    </div>
+    <div class="stat-card teal-card reveal">
+      <div class="stat-number">98,4%</div>
+      <div class="stat-label">Taxa de Entrega de Dados</div>
+      <div class="stat-sub">Reconexão automática nos 1,6%</div>
+    </div>
+    <div class="stat-card red-card reveal">
+      <div class="stat-number">28%</div>
+      <div class="stat-label">Tempo Ligado na Estabilização</div>
+      <div class="stat-sub">Piscadas de ~8s a cada 30s</div>
+    </div>
+    <div class="stat-card green-card reveal">
+      <div class="stat-number">22 min</div>
+      <div class="stat-label">Aquecimento Inicial Contínuo</div>
+      <div class="stat-sub">Fogão a 100% até atingir 70°C</div>
+    </div>
+
+    <!-- TABLE -->
+    <div class="results-table-wrap reveal">
+      <h3>📋 Estabilidade Térmica por Etapa do Processo</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Etapa</th>
+            <th>Tempo Previsto</th>
+            <th>Temperatura Teórica</th>
+            <th>Temperatura Média Real</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="label">Mostura</td>
+            <td>60 min</td>
+            <td class="value">65,0°C</td>
+            <td class="value">65,18°C</td>
+            <td class="ok">✓ Estável</td>
+          </tr>
+          <tr>
+            <td class="label">Mash Out</td>
+            <td>15 min</td>
+            <td class="value">76,0°C</td>
+            <td class="value">76,12°C</td>
+            <td class="ok">✓ Estável</td>
+          </tr>
+          <tr>
+            <td class="label">Fervura Ativa</td>
+            <td>60 min</td>
+            <td class="value">100,0°C</td>
+            <td class="value">99,65°C</td>
+            <td class="ok">✓ Estável</td>
+          </tr>
+          <tr>
+            <td class="label">Fermentação</td>
+            <td>10 dias</td>
+            <td class="value">18,0°C</td>
+            <td class="value">18,04°C</td>
+            <td class="ok">✓ Estável</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="temp-chart reveal" style="grid-column:1/-1;">
+      <h3>📈 Curva Térmica Comparativa — Temperatura Teórica vs Real</h3>
+      <p></p>
+      <div class="chart-bars" id="chartBars"></div>
+      <div style="display:flex;gap:24px;margin-top:16px;font-size:0.75rem;font-family:'Cinzel',serif;letter-spacing:1px;opacity:0.6;">
+        <span><span style="display:inline-block;width:12px;height:12px;background:var(--gold);border-radius:2px;margin-right:6px;vertical-align:middle;"></span>Temperatura Teórica</span>
+        <span><span style="display:inline-block;width:12px;height:12px;background:var(--teal);border-radius:2px;margin-right:6px;vertical-align:middle;"></span>Temperatura Real</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="hop-divider">
+  <div class="hop-line"></div>
+  <div class="hop-center">
+    <div class="hop-dot"></div>
+    <span class="hop-icon">🔌</span>
+    <div class="hop-dot"></div>
+  </div>
+  <div class="hop-line"></div>
+</div>
+
+<!-- ARQUITETURA -->
+<section id="arquitetura">
+  <div class="section-label">07 — Arquitetura do Sistema</div>
+  <h2 class="section-title">Visão Geral</h2>
+  <p class="section-body">
+    Quatro camadas integradas compõem a solução, desde a leitura física do sensor até
+    o dashboard analítico acessível em qualquer dispositivo.
+  </p>
+
+  <div class="arch-grid reveal">
+    <div class="arch-block arch-connector">
+      <span class="arch-icon">🌡</span>
+      <h4>Sensoreamento</h4>
+      <p>DS18B20 mede temperatura com precisão de ±0,5°C no protocolo 1-Wire</p>
+    </div>
+    <div class="arch-block arch-connector">
+      <span class="arch-icon">⚡</span>
+      <h4>Processamento</h4>
+      <p>ESP32 aplica histerese, aciona relé e hospeda servidor web local</p>
+    </div>
+    <div class="arch-block arch-connector">
+      <span class="arch-icon">☁</span>
+      <h4>Nuvem</h4>
+      <p>Google Apps Script recebe dados via HTTP e popula o Google Sheets</p>
+    </div>
+    <div class="arch-block arch-connector">
+      <span class="arch-icon">📊</span>
+      <h4>Visualização</h4>
+      <p>Excel transforma planilha em dashboard interativo em tempo real</p>
+    </div>
+  </div>
+</section>
+
+<div class="hop-divider">
+  <div class="hop-line"></div>
+  <div class="hop-center">
+    <div class="hop-dot"></div>
+    <span class="hop-icon">👥</span>
+    <div class="hop-dot"></div>
+  </div>
+  <div class="hop-line"></div>
+</div>
+
+<!-- EQUIPE -->
+<section id="equipe">
+  <div class="section-label">08 — A Equipe</div>
+  <h2 class="section-title">Quem fez acontecer</h2>
+  <p class="section-body" style="margin:0 auto;">
+    Projeto desenvolvido por oito estudantes do SENAC, reunindo eletrônica,
+    programação, redes e tecnologia alimentar.
+  </p>
+
+  <div class="team-grid">
+    <div class="member-card reveal">
+      <div class="member-avatar">H</div>
+      <div class="member-name">Henrique Moreira Santos</div>
+      <div class="member-email">henriquemoreira1074@gmail.com</div>
+    </div>
+    <div class="member-card reveal">
+      <div class="member-avatar">R</div>
+      <div class="member-name">Rafael Damazio Delfino</div>
+      <div class="member-email">rafaeldamdel@gmail.com</div>
+    </div>
+    <div class="member-card reveal">
+      <div class="member-avatar">R</div>
+      <div class="member-name">Raul Mello de Oliveira</div>
+      <div class="member-email">raulmellodeoliveira@gmail.com</div>
+    </div>
+    <div class="member-card reveal">
+      <div class="member-avatar">G</div>
+      <div class="member-name">Gabriel M. da Gama Muruci</div>
+      <div class="member-email">gmmurucci@icloud.com</div>
+    </div>
+    <div class="member-card reveal">
+      <div class="member-avatar">L</div>
+      <div class="member-name">Leonardo H. Fabris Araujo</div>
+      <div class="member-email">leohfabrisa@gmail.com</div>
+    </div>
+    <div class="member-card reveal">
+      <div class="member-avatar">J</div>
+      <div class="member-name">João Victor F. Sobreira</div>
+      <div class="member-email">jvfs2306@gmail.com</div>
+    </div>
+    <div class="member-card reveal">
+      <div class="member-avatar">R</div>
+      <div class="member-name">Rubens Arini Prada</div>
+      <div class="member-email">rubensprada2003@gmail.com</div>
+    </div>
+    <div class="member-card reveal">
+      <div class="member-avatar">G</div>
+      <div class="member-name">Guilherme Pereira Gomes</div>
+      <div class="member-email">guipgomes2006@gmail.com</div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- ALERTAS POR E-MAIL -->
+
 
 <div class="hop-divider">
   <div class="hop-line"></div>
